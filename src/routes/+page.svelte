@@ -2,6 +2,7 @@
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
   import { onDestroy } from 'svelte';
+  import '../routes/style.css';
 
   export let data;
 
@@ -24,35 +25,11 @@
   onDestroy(() => clearTimeout(debounceTimer));
 </script>
 
-<style>
-  main {
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-  }
-
-  input {
-    padding: 0.6rem;
-    font-size: 1.2rem;
-    border: 1px solid #888;
-    border-radius: 6px;
-    width: 300px;
-  }
-
-  .result {
-    margin-top: 1.5rem;
-    font-size: 1.3rem;
-    color: #333;
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-</style>
-
-<main>
-  <h1>Bem-vindo!</h1>
+<main class="container">
+  <h1 class="title">Bem-vindo à Voltera</h1>
+  <p class="subtitle">Descubra a idade estimada de um nome</p>
   <input
+    class="input"
     type="text"
     placeholder="Digite um nome…"
     bind:value={input}
@@ -60,7 +37,7 @@
   />
 
   {#if data.error}
-    <p class="result">❌ Ocorreu um erro ao buscar a idade.</p>
+    <p class="result error">❌ Ocorreu um erro ao buscar a idade.</p>
   {:else if data.age !== null}
     <p class="result">
       Nome: <strong>{data.name}</strong> <br />
