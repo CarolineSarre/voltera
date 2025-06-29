@@ -1,12 +1,7 @@
+<script>
+    import '$lib/styles/box.css';
+</script>
+
 <div class="container">
   <slot />
 </div>
-
-<style>.container {
-  max-width: 600px;
-  margin: 4rem auto;
-  padding: 2rem;
-  background-color: rgba(18, 18, 18, 0.85);
-  border-radius: 8px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
-}</style>

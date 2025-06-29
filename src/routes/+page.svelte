@@ -1,4 +1,5 @@
 <script>
+  import '$lib/styles/background.css';
   import Box from '$lib/components/Box.svelte';
   import PageHeader from '$lib/components/PageHeader.svelte';
   import NameInput from '$lib/components/NameInput.svelte';

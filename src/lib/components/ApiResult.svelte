@@ -1,4 +1,5 @@
 <script>
+  import '$lib/styles/api-results.css';
   export let name = '';
   export let age = null;
   export let count = null;
@@ -14,22 +15,3 @@
     Baseado em <strong>{count}</strong> registros.
   </p>
 {/if}
-
-<style>
-    .result {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  background: #1a1a1a;
-  padding: 1rem;
-  border-radius: 6px;
-}
-
-.result strong {
-  color: #00e676;
-}
-
-.result.error {
-  color: #ff6b6b;
-}
-</style>

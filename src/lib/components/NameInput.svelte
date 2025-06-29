@@ -1,4 +1,5 @@
 <script>
+  import '$lib/styles/name-input.css';
   import { goto } from '$app/navigation';
   import { onDestroy } from 'svelte';
 
@@ -31,17 +32,3 @@
   bind:value={input}
   autocomplete="off"
 />
-<style>.input {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: #1e1e1e;
-  color: #f1f1f1;
-  outline: none;
-}
-
-.input::placeholder {
-  color: #aaa;
-}</style>

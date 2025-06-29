@@ -1,4 +1,6 @@
 <script>
+  import '$lib/styles/whatsapp-button.css';
+  
   export let phone = '5521986384755';
   export let message = 'Parabéns Ana Caroline, Você é a nova dev Front da Voltera';
   export let position = 'right';
@@ -29,4 +31,3 @@
     />
   </svg>
 </a>
-<style src="$lib/styles/whatsapp-button.css"></style>
