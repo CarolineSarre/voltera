@@ -25,13 +25,11 @@ body::before {
   z-index: -1;
 }
 
-
 main {
   width: min(90%, 46rem);
   padding: 2rem 1.5rem;
 }
 
-/* 4. “Box” de conteúdo (caso use a classe .box) */
 .box {
   background: rgba(0, 0, 0, 0.35);
   border-radius: 1rem;
